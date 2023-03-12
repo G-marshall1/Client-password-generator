@@ -4,11 +4,11 @@
 // Assignment Code
 // I need to Define all possible characters that can be used in the password.
 // I need to define the length of the password.
-const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const numbers = "0123456789";
-const specialCharacters = "!@#$%^&*()_+~`|}{[];?><,./-=";
-
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbers = "0123456789";
+var specialCharacters = "!@#$%^&*()_+~`|}{[];?><,./-=";
+var password = "";
 
 // I need to define the length of the password.
 var passwordLength = prompt("How many characters would you like your password to be?");
@@ -16,9 +16,16 @@ var passwordLength = prompt("How many characters would you like your password to
 // we are targeting the button with the id of generate
 var generateBtn = document.querySelector("#generate") 
 
+//we are targeting the text area with the id of password
+var passwordText = document.querySelector("#password");
+
+var lowerCase = confirm("Would you like to use lower case letters?");
+var upperCase = confirm("Would you like to use upper case letters?"); 
+var numbers = confirm("Would you like to use numbers?");
+var specialCharacters = confirm("Would you like to use special characters?");
+var password = "";
 
 function generatePassword() {
-  // This is confirming that the generatePassword function is running in the console
 console.log("generatePassword function is running")
 }
 // Write password to the #password input
