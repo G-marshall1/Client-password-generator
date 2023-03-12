@@ -10,6 +10,9 @@ const numbers = "0123456789";
 const specialCharacters = "!@#$%^&*()_+~`|}{[];?><,./-=";
 
 
+// I need to define the length of the password.
+var passwordLength = prompt("How many characters would you like your password to be?");
+
 // we are targeting the button with the id of generate
 var generateBtn = document.querySelector("#generate") 
 
