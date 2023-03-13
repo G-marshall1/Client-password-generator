@@ -19,6 +19,7 @@ var generateBtn = document.querySelector("#generate")
 //we are targeting the text area with the id of password
 var passwordText = document.querySelector("#password");
 
+// added confirm prompts to ask the user if they want to use lower case, upper case, numbers, and special characters
 var lowerCase = confirm("Would you like to use lower case letters?");
 var upperCase = confirm("Would you like to use upper case letters?"); 
 var numbers = confirm("Would you like to use numbers?");
@@ -26,7 +27,24 @@ var specialCharacters = confirm("Would you like to use special characters?");
 var password = "";
 
 function generatePassword() {
-console.log("generatePassword function is running")
+char = "";
+if (lowerCase) {
+  char += lowerCase;
+  if (upperCase) {
+    char += upperCase;
+    if (numbers) {
+      char += numbers;
+      if (specialCharacters) {
+        char += specialCharacters;
+      }
+    }
+  }
+ password = "";
+for (var i = 0; i < passwordLength; i++) {
+  password += char.charAt(Math.floor(Math.random() * char.length));
+}
+return password;
+}
 }
 // Write password to the #password input
 function writePassword() {
