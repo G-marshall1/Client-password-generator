@@ -26,6 +26,14 @@ var numbers = confirm("Would you like to use numbers?");
 var specialCharacters = confirm("Would you like to use special characters?");
 var password = "";
 
+while (!lowerCase && !upperCase && !numbers && !specialCharacters) {
+  alert("You must choose at least one character type!");
+  var lowerCase = confirm("Would you like to use lower case letters?");
+  var upperCase = confirm("Would you like to use upper case letters?");
+  var numbers = confirm("Would you like to use numbers?");
+  var specialCharacters = confirm("Would you like to use special characters?");
+}
+
 function generatePassword() {
 char = "";
 if (lowerCase) {
