@@ -17,13 +17,14 @@
 
 ## Installation
 
-No installation needed since it is a landing page that can be viewed here
+No installation needed since it is a landing page that can be viewed here https://g-marshall1.github.io/Client-password-generator/
 
 ## Usage
 -User can choose the length of the password between 8 and 128 characters.
 -User can choose whether to include lowercase, uppercase, numeric, and/or special characters in the password.
 -The password is generated randomly based on the user's chosen criteria.
 -The generated password is displayed in a text area that can be copied to the clipboard.
+![03-Demo](https://user-images.githubusercontent.com/122425742/225156709-8f7b2316-8c3e-444d-917d-d220ac08c926.png)
 
 
 
